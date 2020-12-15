@@ -4,6 +4,8 @@
     e ogni 3 secondi visualizzi un'immagine differente.
     BONUS 2
     cliccando sui pallini visualizzeremo l'immagine corrispondente
+    BONUS 3
+    cliccando sulle frecce della tastiera sinista e destra scorriamo tra le immagini
 */
 let app = new Vue({
     el: '#root',

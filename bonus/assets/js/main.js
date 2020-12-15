@@ -1,7 +1,9 @@
 //Ricreare lo slider di immagini ma questa volta con Vue
-/*  BONUS
+/*  BONUS 1
     Facciamo in modo che il nostro slider scorra automaticamente in avanti,
     e ogni 3 secondi visualizzi un'immagine differente.
+    BONUS 2
+    cliccando sui pallini visualizzeremo l'immagine corrispondente
 */
 let app = new Vue({
     el: '#root',
@@ -12,7 +14,12 @@ let app = new Vue({
             'https://static.photocdn.pt/images/articles/2017/04/28/iStock-646511634.jpg',
             'https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg',
             'https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg'
-        ]
+        ],
+        descriptions: [
+            'paesaggio numero 1',
+            'paesaggio numero 2',
+            'paesaggio numero 3',
+            'paesaggio numero 4']
     },
     methods: {
         nextImage(){
@@ -26,6 +33,9 @@ let app = new Vue({
             if(this.index<0){
                 this.index = this.srcImages.length - 1;
             }
+        },
+        setIndex(newIndex){
+            this.index = newIndex;
         }
     }
 });

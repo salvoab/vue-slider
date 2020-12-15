@@ -37,7 +37,8 @@ let app = new Vue({
         setIndex(newIndex){
             this.index = newIndex;
         }
+    },
+    mounted(){
+        setInterval(this.nextImage, 3000);
     }
 });
-
-setInterval(app.nextImage,3000);

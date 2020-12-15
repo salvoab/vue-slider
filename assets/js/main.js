@@ -8,6 +8,12 @@ let app = new Vue({
             'https://static.photocdn.pt/images/articles/2017/04/28/iStock-646511634.jpg',
             'https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg',
             'https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg'
+        ],
+        descriptions: [
+            'paesaggio numero 1',
+            'paesaggio numero 2',
+            'paesaggio numero 3',
+            'paesaggio numero 4'
         ]
     },
     methods: {

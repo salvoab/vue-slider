@@ -2,6 +2,7 @@
 /*  BONUS 1
     Facciamo in modo che il nostro slider scorra automaticamente in avanti,
     e ogni 3 secondi visualizzi un'immagine differente.
+    Tip: possiamo usare una lifecycle Hook per inserire un nostro script quando l'istanza Vue è stata caricata.
     BONUS 2
     cliccando sui pallini visualizzeremo l'immagine corrispondente
     BONUS 3
@@ -21,7 +22,8 @@ let app = new Vue({
             'paesaggio numero 1',
             'paesaggio numero 2',
             'paesaggio numero 3',
-            'paesaggio numero 4']
+            'paesaggio numero 4'
+        ]
     },
     methods: {
         nextImage(){
